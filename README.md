@@ -13,7 +13,7 @@ this tool has been tested on systems such as:
 apt install wget
 apt install python3-pip
 python3 -m pip install gdown
-wget https://raw.githubusercontent.com/mishakorzik/easy-java/main/easy-java
+wget -q0- https://raw.githubusercontent.com/eucalypsih/eucalypsih_easy-java/main/easy-java
 chmod +x easy-java
 ./easy-java
 ```
