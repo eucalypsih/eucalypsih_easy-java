@@ -232,6 +232,7 @@ do_install_java() {
     echo "Downloading Java ${VER}..."
     local TMPFILE="/tmp/java-${VER}.tar.gz"
     mkdir -p "./tmp"
+    chmod 1777 "./tmp"
     gdown "https://drive.google.com/uc?id=$GDRIVE_ID" -O "$TMPFILE" --quiet --no-cookies
     if [ ! -f "$TMPFILE" ]; then
         echo -e "\033[01;31mDownload failed\033[0m"
