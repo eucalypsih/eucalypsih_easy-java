@@ -369,7 +369,7 @@ do_install_gradle() {
         rm -rf "$BASE_DIR/gradle"
         mkdir -p "$BASE_DIR/gradle"
         unzip -q "$TMPFILE" -d "./tmp"
-        mv "./tmp/gradle-${VER}/*" "$BASE_DIR/gradle/"
+        mv ./tmp/gradle-${VER}/* "$BASE_DIR/gradle/"
         rm -rf "./tmp/gradle-${VER}"
         echo "$VER" > "$BASE_DIR/gradle/.version"
     fi
