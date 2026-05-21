@@ -346,12 +346,12 @@ register_mvn_function() {
 do_install_gradle() {
     local VER="$1"
     local URL="${GRADLE_URLS[$VER]}"
-    echo "Downloading Gradle ${VER}..."
     local TMPFILE="./tmp/gradle.zip"
     if [ ! -d "./tmp" ]; then
         echo "tmp dibuat";
         mkdir "./tmp";
     fi
+    echo "Downloading Gradle ${VER}..."
     wget -q "$URL" -O "$TMPFILE"
     if [ ! -f "$TMPFILE" ]; then
         echo -e "\033[01;31mDownload failed\033[0m"
